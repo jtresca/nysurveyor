@@ -1,0 +1,188 @@
+/**
+ * Changelog
+ *
+ * @package     NoNumber! Extension Manager
+ * @version     2.4.0
+ *
+ * @author      Peter van Westen <peter@nonumber.nl>
+ * @link        http://www.nonumber.nl
+ * @copyright   Copyright © 2011 NoNumber! All Rights Reserved
+ * @license     http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ */
+
+/**
+ * + Added
+ * ! Removed
+ * ^ Changed
+ * # Fixed
+ */
+
+23-May-2011 : v2.4.0
+ + Joomla 1.6 compatible!
+ ^ Changed way the mootools version is detected
+
+20-Apr-2011 : v2.3.1
+ # Fixed issue with proxy language strings not being correct
+ # Fixed issue with javascript breaking on Safari browsers
+ # Fixed issue with Turkish language file error on installation
+
+06-Apr-2011 : v2.3.0
+ + Added option to install/update language files
+ # Fixed issues with javascript errors concerning checkboxes
+ # Fixed issue with selection being emptied on pressing 'install selected' button
+
+30-Mar-2011 : v2.2.2
+ + Added option to set proxy server for outside connections
+ + Added check to see if all parts of the extension are installed
+ # Fixed issue with checkboxes of hidden extensions being selected
+
+25-Mar-2011 : v2.2.1
+ # Fixed issues with javascript errors on non-FireFox browsers (with mtupgrade)
+ # Fixed issues with language strings not working in some cases
+
+18-Mar-2011 : v2.2.0
+ ! Removed modal popup option for opening extensions
+ ! Removed 'installed' column (version column already gives that info)
+ ! Removed description column
+ ^ Moved description tooltip to extension name
+ ^ Added descriptions to language files (no longer collected externally)
+ # Fixed some issues with language strings
+
+01-Mar-2011 : v2.1.4
+ ^ Changed language files to be J1.6 ready
+ ^ Changed some extension icons
+ # Fixed issue with links to component pages opening in modal popup
+
+08-Feb-2011 : v2.1.3
+ + Added error numbers to install errors
+ + Added Check Data button to each extension line
+ # Fixed some tooltips
+ # Fixed issue with installing via curl failing on some setups
+
+15-Jan-2011 : v2.1.2
+ ^ Changed display of install/update all buttons (ghosted)
+ # Fixed issue with extensions failing to install if download is slow
+
+14-Jan-2011 : v2.1.1
+ + Added button to show/hide not installed extensions
+ ^ Changed main refresh button to a Check Data button
+ ^ Changed extension icons
+ # Fixed issue with default setting Check All not being correct
+ # Fixed issue with untranslated language strings in config popup
+ # Fixed issue with language strings from core installer
+ # Fixed issue with Update/Install All buttons not using curl
+
+23-Dec-2010 : v2.1.0
+ + Added option to only collect external data from installed extensions
+ + Added type icons and links to the extensions
+ + Added option to open these pages in modal popup pages
+ ^ Changed method of downloading of files to support curl
+ # Fixed issue with IE8 (and lower) javascript errors on checking
+
+10-Dec-2010 : v2.0.4
+ # Fixed issue with install/update all buttons not appearing
+
+03-Dec-2010 : v2.0.2
+ # Fixed some javascript issues with MooTools 1.2
+ # Fixed issue with wrong version number
+
+03-Dec-2010 : v2.0.0
+ + Added option to not collect external data on pageload
+ ^ Changed way external data is collected (making it much faster)
+
+25-Nov-2010 : v1.6.0
+ + Added checks to see if NoNumber! Elements plugin is installed/enabled
+ + Added download icons
+ ^ Fixed and updated all language strings
+ # Fixed issue with install all button disappearing
+
+09-Nov-2010 : v1.5.1
+ # Fixed issue with installing/updating not working with MooTools Upgrade plugin
+
+08-Nov-2010 : v1.5.0
+ + Added Timed Styles and Slider to the list
+ ^ Made MooTools 1.2 compatible
+
+03-Nov-2010 : v1.4.3
+ + Added Tabber to the list
+ ^ Changed layout a bit
+
+19-Oct-2010 : v1.4.2
+ + Added CDN for Joomla! to the list
+
+26-Sep-2010 : v1.4.1
+ # Fixed issue with info not being able to be checked on some servers
+
+29-Jul-2010 : v1.4.0
+ + Added select boxes and install selected button
+ + Added confirm popup on install all buttons
+ + Added link to extension names
+ + Added display of ghosted input fields when valid code for all is entered
+ ! Removed link column
+ ^ Changed layout a bit
+
+27-Jul-2010 : v1.3.3
+ + Added message about cleaning browsers cache when installing/updating all (not in 1.3.2)
+
+27-Jul-2010 : v1.3.2
+ + Added message about cleaning browsers cache when installing/updating all
+ # Fixed issue with new version number not being placed in install links
+
+26-Jul-2010 : v1.3.1
+ + Added refresh icons for each row
+ ^ Improved saving of license codes
+ # Fixed issue with install state and version number not updating when refreshing row
+ # Fixed issue with install buttons sometimes doing install twice
+
+24-Jul-2010 : v1.3.0
+ + Added a button to install all extensions that are not already installed
+ + Added a button to update all outdated extensions
+ + Added description icon
+ + Added refresh all icon
+ ^ Changed refresh icons to refresh whole row
+ ^ Changed icons a bit
+ ^ Combined license and extension page in one
+ ^ Changed way license codes are saved (now via ajax)
+ ^ Changed way versions and licenses are checked (no more base64)
+ ^ Improved main javascript files
+
+19-Jul-2010 : v1.2.0
+ + Added install/update buttons
+ + Added changelog icon
+ + Added download button
+ + Added display of version number of the NoNumber! Elements
+ ^ Change way version is checked
+ ^ Changed names and order of the pages (Licenses / Versions)
+
+10-Jul-2010 : v1.1.5
+ # Fixed issue with submenu items (Versions / Licenses) not being added
+
+02-Jul-2010 : v1.1.4
+ + Added DB Replacer and Snippets to the list
+
+23-Jun-2010 : v1.1.3
+ # Fixed issue with code looping, causing page timeouts
+
+22-Jun-2010 : v1.1.2
+ # Fixed issue with undefined properties
+
+22-Feb-2010 : v1.1.1
+ ! Removed FrontpagePlus from the list
+ # Fixed issue with database table not being installed
+ # Fixed issue with submenu items not being created
+
+12-Feb-2010 : v1.1.0
+ # Fixed issue with code not check not being same for all php versions / setups
+    (Requires new License codes. Old codes won't work anymore!)
+
+01-Feb-2010 : v1.0.2
+ ^ Removed version number caching from versions page
+ # Fixed issue with deprecated syntax for php 5.3+
+ # Fixed issue with hosts under a secondary level domain (like .co.uk)
+
+26-Jan-2010 : v1.0.1
+ + Added links to versions and licenses pages in the toolbar
+ # Fixed location of Joomla! DTD files
+
+18-Jan-2010 : v1.0.0
+ + First release

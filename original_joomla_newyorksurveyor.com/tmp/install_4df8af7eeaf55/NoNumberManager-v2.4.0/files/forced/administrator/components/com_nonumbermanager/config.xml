@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config addfieldpath="/plugins/system/nonumberelements/elements">
+	<fieldset
+		name="nonumberelements"
+		label="JOPTIONS">
+		<field name="@loadlanguage" type="loadlanguage" extension="com_nonumbermanager" />
+		<field name="@title" type="title" description="NNEM_REFRESH_PAGE_AFTER_SAVING" />
+		<field name="check_data" type="radio" default="1" label="NNEM_CHECK_DATA" description="NNEM_CHECK_DATA_DESC">
+			<option value="0">None</option>
+			<option value="1">NNEM_ALL</option>
+			<option value="2">NNEM_ONLY_INSTALLED</option>
+		</field>
+		<field name="hide_notinstalled" type="radio" default="0" label="NNEM_HIDE_NOTINSTALLED" description="NNEM_HIDE_NOTINSTALLED_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="use_proxy" type="radio" default="0" label="NNEM_USE_PROXY" description="NNEM_USE_PROXY_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="@toggler_10a" type="toggler" param="use_proxy" value="1" />
+			<field name="@title_10a" type="title" start="1" blocktype="fieldset" label="NNEM_PROXY" />
+				<field name="proxy_host" type="text" size="40" default="" label="NNEM_PROXY_HOST" description="NNEM_PROXY_HOST_DESC" />
+				<field name="proxy_port" type="text" size="40" default="" label="NNEM_PROXY_PORT" description="NNEM_PROXY_PORT_DESC" />
+				<field name="proxy_login" type="text" size="40" default="" label="NNEM_PROXY_LOGIN" description="NNEM_PROXY_LOGIN_DESC" />
+				<field name="proxy_password" type="text" size="40" default="" label="NNEM_PROXY_PASSWORD" description="NNEM_PROXY_PASSWORD_DESC" />
+			<field name="@title_10b" type="title" end="1" />
+		<field name="@toggler_10b" type="toggler" />
+	</fieldset>
+</config>

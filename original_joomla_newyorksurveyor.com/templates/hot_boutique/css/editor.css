@@ -1,0 +1,407 @@
+/*****************************************************************
+************************** IMPORTANT *****************************
+******************************************************************
+** THIS OVERRIDE EDITOR.CSS HERE templates\system\css\editor.css** 
+******************************************************************
+******************************************************************/
+
+
+/**************************************************************
+******* CSS FROM: templates\hot_boutique\css\template.css ******
+***************************************************************/
+
+body {
+	background: #fff;
+	font-family: Tahoma,Helvetica,Arial,sans-serif;
+	line-height: 1.3em;
+	font-size: 76%;
+	color: #333;
+}
+
+h1 {
+	font-family:Helvetica ,Arial,sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #666;
+}
+
+h2 {
+	font-family: Arial, Helvetica,sans-serif;
+	font-size: 14px;;
+	font-weight: normal;
+	color: #333;
+}
+
+h3 {
+  font-weight: bold;
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  color: #135cae;
+}
+
+h4 {
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #333;
+}
+
+H5 {
+font-size: 16px;
+font-family:"Century Gothic",Helvetica,Arial,sans-serif;
+letter-spacing:1px;
+color:#000033;
+margin:0px 0px 3px 0px;
+padding:0px;
+font-weight:normal;
+line-height:1.15em;
+}
+
+H6 {
+font-size: 18px;
+font-family:Palatino Linotype, Book Antiqua, Palatino, serif;
+font-style:italic;
+color:#000056;
+margin:0px 0px 3px 0px;
+padding:0px;
+font-weight: 200; 
+line-height:1.15em;
+}
+a:link, a:visited {
+	color: #1B57B1; text-decoration: none;
+	font-weight: normal;
+}
+
+a:hover {
+	color: #00c;	text-decoration: underline;
+	font-weight: normal;
+}
+
+div.caption       { padding: 0 10px 0 10px; }
+div.caption img   { border: 1px solid #CCC; }
+div.caption p     { font-size: .90em; color: #666; text-align: center; }
+
+/* STYLES FOR JOOMLA! EDITOR */
+hr#system-readmore  { border: red dashed 1px; color: red; }
+hr.system-pagebreak { border: gray dashed 1px; color: gray; }
+
+
+/* typography */
+.warning {
+background:#fcff09;
+padding:15px;
+color:#000;
+border-top:4px solid #C60;
+border-bottom:4px solid #C60;
+}
+
+.info {
+background:#477294;
+padding:15px;
+color:#FFF;
+border-top:4px solid #00BDFE;
+border-bottom:4px solid #00BDFE;
+}
+
+.info1 {
+background:#129EE8;
+padding:15px;
+color:#FFF;
+border-top:4px solid #00008C;
+border-bottom:4px solid #00008C;
+}
+
+.info2 {
+background:#00008C;
+padding:15px;
+color:#FFF;
+border-top:4px solid #129EE8;
+border-bottom:4px solid #129EE8;
+}
+
+.info3 {
+background:#006699;
+padding:15px;
+color:#33FAFF;
+border-top:4px solid #00BDFE;
+border-bottom:4px solid #00BDFE;
+}
+
+.info4 {
+background:#006699;
+padding:15px;
+color:#fff;
+border-top:4px solid #00008C;
+border-bottom:4px solid #00008C;
+}
+
+.error {
+background:#cc6666;
+padding:15px;
+color:#000;
+border-top:4px solid #900;
+border-bottom:4px solid #900;
+}
+
+.code {
+	background: url(../images/code_bg.png);
+	padding:0 15px;
+	color:#000;
+	font-family:"Courier New", Courier, monospace;
+	border-top:4px solid #999;
+	border-bottom:4px solid #999;
+	line-height:20px;
+}
+
+.quote {
+padding:20px;
+font-family:Palatino Linotype, Book Antiqua, Palatino, serif;
+font-size:18px;
+text-align:center;
+color:#fff;
+font-style:italic;
+background:#000;
+}
+
+
+
+/**************************************************************
+******* CSS FROM: templates\hot_boutique\css\template.css ******
+***************************************************************/
+
+/* lists */
+ol {
+margin-left:20px;
+padding-left:7px;
+}
+
+ol li {
+padding-left:0;
+padding-top:0;
+padding-bottom:5px;
+}
+
+li ol {
+padding-top:5px;
+}
+
+.content_wrap ul {
+margin:0 0 0 25px;
+padding:0;
+}
+
+.content_wrap ul li {
+padding-left:5px;
+padding-top:0;
+padding-bottom:5px;
+}
+
+.content_wrap li ul {
+padding-top:5px;
+}
+
+.content_wrap li ul li {
+background:none;
+list-style-type:circle;
+margin-left:20px;
+padding-left:0;
+}
+
+ul.checklist li {
+background:url(../images/icon_checklist.png) no-repeat;
+padding-left:22px;
+list-style:none;
+}
+
+ul.arrow li {
+background:url(../images/icon_arrow.png) no-repeat;
+padding-left:22px;
+list-style:none;
+}
+
+ul.star li {
+background:url(../images/icon_star.png) no-repeat;
+padding-left:22px;
+list-style:none;
+}
+
+/* menu */
+.column_right ul.menu,.column_left ul.menu {
+margin:0;
+padding:0;
+}
+
+.column_right ul.menu li,.column_left ul.menu li {
+margin:5px 0;
+list-style:none;
+padding:0;
+border:1px solid #eee;
+}
+
+.column_right ul.menu li:hover,.column_left ul.menu li:hover {
+border:1px solid #000;
+}
+
+.column_right ul.menu li a:link,.column_right ul.menu li a:visited,.column_left ul.menu li a:link,.column_left ul.menu li a:visited {
+text-decoration:none;
+display:block;
+font-size:12px;
+text-align:center;
+padding:3px 0;
+}
+
+.column_right ul.menu li ul,.column_left ul.menu li ul {
+margin:0;
+padding:10px 0;
+display:block;
+}
+
+.column_right ul.menu li ul li,.column_left ul.menu li ul li {
+margin:0;
+padding:0 15px;
+border:none;
+font-size:11px;
+}
+
+.column_right ul.menu li ul li:hover,.column_left ul.menu li ul li:hover {
+	border:none;
+	cursor:pointer;
+}
+
+.column_right ul.menu li.active ul li a:link,
+.column_right ul.menu li.active ul li a:visited,
+.column_left ul.menu li.active ul li a:link,
+.column_left ul.menu li.active ul li a:visited {
+font-size:11px;
+background:none;
+color:#333 !important;
+}
+
+.column_right ul.menu li.active ul li a:hover,
+.column_left ul.menu li.active ul li a:hover {
+font-size:11px;
+background:none;
+color:#666 !important;
+text-decoration:underline;
+}
+
+
+/* top menu */
+
+#nav,#nav ul {
+margin:0;
+padding:0;
+list-style-type:none;
+list-style-position:outside;
+position:absolute;
+z-index:100;
+line-height:normal;
+}
+
+#nav ul {
+	display:none;
+}
+
+#nav a {
+display:block;
+padding:5px 10px 2px 10px;
+margin:0;
+text-decoration:none;
+font-family:Arial, Helvetica, sans-serif;
+font-size:12px;
+font-weight:normal;
+text-transform:uppercase;
+}
+
+#nav li {
+float:left;
+position:relative;
+}
+
+#nav li a {
+height:19px;
+}
+
+#nav li ul a:hover {
+color:#fff;
+}
+
+#nav li ul li,#nav li ul li ul {
+margin:0;
+padding:0;
+float:none;
+cursor:pointer;
+}
+
+#nav li ul a {
+width:160px;
+line-height:normal;
+padding:4px 10px 1px 10px;
+text-transform:none;
+}
+
+#nav li ul ul {
+left:180px;
+margin:0;
+}
+
+#nav li:hover ul ul,#nav li:hover ul ul ul,#nav li:hover ul ul ul ul {
+display:none;
+}
+
+#nav li:hover ul,#nav li li:hover ul,#nav li li li:hover ul,#nav li li li li:hover ul {
+display:block;
+}
+
+#nav ul li a {
+font-size:12px;
+color:#fff;
+text-transform:none;
+font-weight:normal;
+}
+
+#nav li ul a:hover {
+background:#000;
+color:#fff;
+}
+
+#nav ul ul {
+top:0;
+z-index:200;
+}
+
+#topmenu .sub {
+font-size:10px;
+display:block;
+}
+
+
+
+
+
+/**************************************************************
+********** CSS FROM: templates\systems\css\template.css *********
+***************************************************************/
+
+blockquote:before, blockquote:after, q:before, q:after {content:"";}
+blockquote, q {quotes:"" "";}
+a img {border:none;}
+
+/* Typography */
+blockquote {margin:1.5em;color:#666;font-style:italic;}
+li ul, li ol {margin:0 1.5em;}
+ul, ol {margin:0 1.5em 1.5em 1.5em;}
+ul {list-style-type:disc;}
+ol {list-style-type:decimal;}
+dl {margin:0 0 1.5em 0;}
+dl dt {font-weight:bold;}
+dd {margin-left:1.5em;}
+.hide {display:none;}
+.quiet {color:#666;}
+.loud {color:#000;}
+.highlight {background:#ff0;}
+.added {background:#060;color:#fff;}
+.removed {background:#900;color:#fff;}
+.first {margin-left:0;padding-left:0;}
+.last {margin-right:0;padding-right:0;}
+.top {margin-top:0;padding-top:0;}
+.bottom {margin-bottom:0;padding-bottom:0;}

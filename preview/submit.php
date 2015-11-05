@@ -4,7 +4,7 @@
 if(isset($_POST['url']) && $_POST['url'] == ''){
 
 	// put your email address here
-	$youremail = 'calactyte@gmail.com';
+	$youremail = 'newyorksurveyor@aol.com';
 
 	// prepare a "pretty" version of the message
 	// Important: if you added any form fields to the HTML, you will need to add them here also
@@ -48,8 +48,8 @@ staking and variance applications.">
   
    <script type="text/javascript">
     // split your email into two parts and remove the @ symbol
-    var first = "calactyte";
-    var last = "gmail.com";
+    var first = "newyorksurveyor";
+    var last = "@aol.com";
   </script>
  <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">

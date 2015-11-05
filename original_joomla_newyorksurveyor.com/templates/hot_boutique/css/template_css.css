@@ -1,0 +1,540 @@
+/*------------------------------------------------------------------------
+# "Hot Boutique" Joomla template, Version 1.0.0 - March, 2010
+# Copyright (C) 2010 Hot Joomla Templates. All Rights Reserved.
+# License: Copyrighted Commercial Software
+# Author: Hot Joomla Templates
+# Website:  http://www.hotjoomlatemplates.com
+-------------------------------------------------------------------------*/
+
+
+/**************************************************************
+*****************************IMPORTANT ***********************
+*****  SEE CUSTOM EDITS AT BOTTOM (typography section)  ********
+/**************************************************************
+************* UPDATE EDITOR.CSS WITH ANY CHANGES *************
+** NEW EDITOR.CSS HERE templates\hot_boutique\css\editor.css **
+***************************************************************/
+
+
+/* basics */
+a:link,a:visited {
+text-decoration:underline;
+}
+
+a:hover {
+text-decoration:none;
+}
+
+a.readon:link,a.readon:visited,a.readon:hover {
+display:block;
+text-align:right;
+}
+
+img {
+border:0;
+}
+
+.content_wrap img {
+	border:1px solid #ccc;
+	padding:2px;
+}
+
+.content_wrap img.reflected {
+	border:0;
+	padding:0;
+}
+
+
+fieldset {
+border:0;
+}
+
+.sectiontableheader {
+font-weight:700;
+padding:5px;
+border-bottom:1px dotted #ccc;
+}
+
+.sectiontableentry1 td {
+padding:5px;
+text-align:left;
+}
+
+.sectiontableentry2 td {
+padding:5px;
+text-align:left;
+background:url(../images/content_bg2.png);
+}
+
+td.sectiontableentry1,td.sectiontableentry2 {
+text-align:left;
+padding:5px;
+}
+
+.contentpane,.contentpaneopen,.blog {
+width:100%;
+}
+
+.componentheading,h1 {
+font-family:"Century Gothic",Helvetica,Arial,sans-serif;
+font-size:32px;
+font-weight:normal;
+text-align:left;
+margin:0;
+padding-bottom:10px;
+/*padding-bottom:15px;*/
+}
+
+.componentheading {
+	background:none;
+}
+
+.content_wrap .componentheading h1 {
+padding:3px 0px;
+}
+
+.contentheading,h2 {
+font-family:Palatino Linotype,Book Antiqua,Palatino,serif;
+font-style:italic;
+font-size:22px;
+font-weight:normal;
+text-align:left;
+padding:3px 0;
+margin:0;
+text-decoration:none;
+line-height:24px;
+}
+
+.small {
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:10px;
+color:#999;
+text-decoration:none;
+font-weight:700;
+}
+
+.createdate,.modifydate {
+font-family:Arial, Helvetica, sans-serif;
+font-size:10px;
+color:#999;
+text-align:left;
+}
+
+.inputbox {
+border:1px solid #ccc;
+font-size:11px;
+padding:4px 10px;
+font-size:13px;
+}
+
+.inputbox:focus,.inputbox:hover {
+border:1px solid #393939;
+}
+
+.button {
+background:#222;
+color:#fff;
+border:none;
+padding:4px 10px;
+}
+
+table.searchinto {
+width:100%;
+}
+
+table.searchintro td {
+font-weight:700;
+}
+
+form {
+margin:0;
+padding:0;
+}
+
+.article_column {
+padding:0;
+}
+
+.article_separator {
+}
+
+/* lists */
+ol {
+margin-left:20px;
+padding-left:7px;
+}
+
+ol li {
+padding-left:0;
+padding-top:0;
+padding-bottom:5px;
+}
+
+li ol {
+padding-top:5px;
+}
+
+.content_wrap ul {
+margin:0 0 0 25px;
+padding:0;
+}
+
+.content_wrap ul li {
+padding-left:5px;
+padding-top:0;
+padding-bottom:5px;
+}
+
+.content_wrap li ul {
+padding-top:5px;
+}
+
+.content_wrap li ul li {
+background:none;
+list-style-type:circle;
+margin-left:20px;
+padding-left:0;
+}
+
+ul.checklist li {
+background:url(../images/icon_checklist.png) no-repeat;
+padding-left:22px;
+list-style:none;
+}
+
+ul.arrow li {
+background:url(../images/icon_arrow.png) no-repeat;
+padding-left:22px;
+list-style:none;
+}
+
+ul.star li {
+background:url(../images/icon_star.png) no-repeat;
+padding-left:22px;
+list-style:none;
+}
+
+/* menu */
+.column_right ul.menu,.column_left ul.menu {
+margin:0;
+padding:0;
+}
+
+.column_right ul.menu li,.column_left ul.menu li {
+margin:5px 0;
+list-style:none;
+padding:0;
+border:1px solid #eee;
+}
+
+.column_right ul.menu li:hover,.column_left ul.menu li:hover {
+border:1px solid #000;
+}
+
+.column_right ul.menu li a:link,.column_right ul.menu li a:visited,.column_left ul.menu li a:link,.column_left ul.menu li a:visited {
+text-decoration:none;
+display:block;
+font-size:12px;
+text-align:center;
+padding:3px 0;
+}
+
+.column_right ul.menu li ul,.column_left ul.menu li ul {
+margin:0;
+padding:10px 0;
+display:block;
+}
+
+.column_right ul.menu li ul li,.column_left ul.menu li ul li {
+margin:0;
+padding:0 15px;
+border:none;
+font-size:11px;
+}
+
+.column_right ul.menu li ul li:hover,.column_left ul.menu li ul li:hover {
+	border:none;
+	cursor:pointer;
+}
+
+.column_right ul.menu li.active ul li a:link,
+.column_right ul.menu li.active ul li a:visited,
+.column_left ul.menu li.active ul li a:link,
+.column_left ul.menu li.active ul li a:visited {
+font-size:11px;
+background:none;
+color:#333 !important;
+}
+
+.column_right ul.menu li.active ul li a:hover,
+.column_left ul.menu li.active ul li a:hover {
+font-size:11px;
+background:none;
+color:#666 !important;
+text-decoration:underline;
+}
+
+
+/* top menu */
+
+#nav,#nav ul {
+margin:0;
+padding:0;
+list-style-type:none;
+list-style-position:outside;
+position:absolute;
+z-index:100;
+line-height:normal;
+}
+
+#nav ul {
+	display:none;
+}
+
+#nav a {
+display:block;
+padding:5px 10px 2px 10px;
+margin:0;
+text-decoration:none;
+font-family:Arial, Helvetica, sans-serif;
+font-size:12px;
+font-weight:normal;
+text-transform:uppercase;
+}
+
+#nav li {
+float:left;
+position:relative;
+}
+
+#nav li a {
+height:19px;
+}
+
+#nav li ul a:hover {
+color:#fff;
+}
+
+#nav li ul li,#nav li ul li ul {
+margin:0;
+padding:0;
+float:none;
+cursor:pointer;
+}
+
+#nav li ul a {
+width:160px;
+line-height:normal;
+padding:4px 10px 1px 10px;
+text-transform:none;
+}
+
+#nav li ul ul {
+left:180px;
+margin:0;
+}
+
+#nav li:hover ul ul,#nav li:hover ul ul ul,#nav li:hover ul ul ul ul {
+display:none;
+}
+
+#nav li:hover ul,#nav li li:hover ul,#nav li li li:hover ul,#nav li li li li:hover ul {
+display:block;
+}
+
+#nav ul li a {
+font-size:12px;
+color:#fff;
+text-transform:none;
+font-weight:normal;
+}
+
+#nav li ul a:hover {
+background:#000;
+color:#fff;
+}
+
+#nav ul ul {
+top:0;
+z-index:200;
+}
+
+#topmenu .sub {
+font-size:10px;
+display:block;
+}
+
+/* modules */
+
+.pathway {
+text-transform:uppercase;
+line-height:30px;
+}
+
+a.pathway:link,a.pathway:visited,a.pathway:hover {
+text-decoration:none;
+font-weight:normal;
+}
+
+.sectiontableentry1-rounded, .sectiontableentry2-rounded, .sectiontableentry1-featured, .sectiontableentry2-featured {
+	text-align:left;
+}
+
+.column_left .module-rounded, .column_left .module-featured {
+      margin-bottom:15px;
+}
+
+.column_right .module-rounded, .column_right .module-featured {
+      margin-bottom:15px;
+}
+
+.module {
+        background:none !important;
+}
+
+.module h3{
+           background-color:#FBEDF2;
+           text-align:center !important;
+}
+
+.module h3, .module-menu h3, .module-rounded h3, .module-featured h3 { 
+         font-weight:normal;
+         text-align:center;
+		 margin-top:0;
+		 font-family:"Century Gothic",Helvetica,Arial,sans-serif;
+		 letter-spacing:1px;
+		 font-size:14px;
+		 padding:2px 0 4px 0;
+		 margin-bottom:10px;
+}
+
+.column_left .module, .column_left .module_menu, .column_right .module, .column_right .module_menu {
+	margin-bottom:15px;
+}
+
+div.module-rounded div div div div  {background:none;}
+div.module-rounded div div div {background:url(../images/rounded_tl.png) no-repeat scroll 0 0; padding:8px;}
+div.module-rounded div div {background:url(../images/rounded_tr.png) no-repeat scroll 100% 0;}
+div.module-rounded {background:url(../images/rounded_bl.png) no-repeat scroll 0 100%;}
+div.module-rounded div {background:url(../images/rounded_br.png) no-repeat scroll 100% 100%;}
+div.module-rounded h3, div.module-featured h3 {
+	font-family:"Century Gothic",Helvetica,Arial,sans-serif;
+	font-size:14px;
+	font-weight:normal;
+	letter-spacing:1px;
+	padding-bottom:10px;
+	padding-top:0;
+	margin:0;
+}
+
+div.module-featured div div div div {background:none;}
+div.module-featured div div div {background:url(../images/rounded_tl.png) no-repeat scroll 0 0; padding:8px;}
+div.module-featured div div {background:url(../images/rounded_tr.png) no-repeat scroll 100% 0;}
+div.module-featured {background:url(../images/rounded_bl.png) no-repeat scroll 0 100%;}
+div.module-featured div {background:url(../images/rounded_br.png) no-repeat scroll 100% 100%;}
+
+.bottom h3, .bottom1 .module h3 {
+text-align:center !important;
+}
+
+/* typography */
+.warning {
+background:#fcff09;
+padding:15px;
+color:#000;
+border-top:4px solid #C60;
+border-bottom:4px solid #C60;
+}
+
+.info {
+background:#477294;
+padding:15px;
+color:#FFF;
+border-top:4px solid #00BDFE;
+border-bottom:4px solid #00BDFE;
+}
+
+.info1 {
+background:#129EE8;
+padding:15px;
+color:#FFF;
+border-top:4px solid #00008C;
+border-bottom:4px solid #00008C;
+}
+
+.info2 {
+background:#00008C;
+padding:15px;
+color:#FFF;
+border-top:4px solid #129EE8;
+border-bottom:4px solid #129EE8;
+}
+
+.info3 {
+background:#006699;
+padding:15px;
+color:#33FAFF;
+border-top:4px solid #00BDFE;
+border-bottom:4px solid #00BDFE;
+}
+
+.info4 {
+background:#006699;
+padding:15px;
+color:#fff;
+border-top:4px solid #00008C;
+border-bottom:4px solid #00008C;
+}
+
+.error {
+background:#cc6666;
+padding:15px;
+color:#000;
+border-top:4px solid #900;
+border-bottom:4px solid #900;
+}
+
+.code {
+	background: url(../images/code_bg.png);
+	padding:0 15px;
+	color:#000;
+	font-family:"Courier New", Courier, monospace;
+	border-top:4px solid #999;
+	border-bottom:4px solid #999;
+	line-height:20px;
+}
+
+.quote {
+padding:20px;
+font-family:Palatino Linotype, Book Antiqua, Palatino, serif;
+font-size:18px;
+text-align:center;
+color:#fff;
+font-style:italic;
+background:#000;
+}
+
+/* custom css added */
+
+H5 {
+font-size: 16px;
+font-family:"Century Gothic",Helvetica,Arial,sans-serif;
+letter-spacing:1px;
+color:#000033;
+margin:0px 0px 3px 0px;
+padding:0px;
+font-weight:normal;
+line-height:1.15em;
+}
+
+H6 {
+font-size: 18px;
+font-family:Palatino Linotype, Book Antiqua, Palatino, serif;
+font-style:italic;
+color:#000056;
+margin:0px 0px 3px 0px;
+padding:0px;
+font-weight: 200; 
+line-height:1.15em;
+}
+		 

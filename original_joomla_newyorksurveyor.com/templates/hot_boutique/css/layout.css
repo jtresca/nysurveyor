@@ -1,0 +1,217 @@
+/*------------------------------------------------------------------------
+# "Hot Boutique" Joomla template, Version 1.0.0 - March, 2010
+# Copyright (C) 2010 Hot Joomla Templates. All Rights Reserved.
+# License: Copyrighted Commercial Software
+# Author: Hot Joomla Templates
+# Website:  http://www.hotjoomlatemplates.com
+-------------------------------------------------------------------------*/
+
+html {
+	font-size:13px;
+}
+
+body {
+	margin:0;
+	padding:0;
+	font-family:Arial, Helvetica, sans-serif;
+	line-height:18px;
+}
+
+
+
+.wrapper {
+	margin:0 auto;
+	position:relative;
+	height:auto;
+	background:#fff;
+}
+
+.header {
+	background:#00628B url(/boutique/templates/hot_boutique/images/top_bg.png) no-repeat center top;
+    height:842px;
+	background:#00628B !important;
+}
+
+
+/* * * * * * * * ORIGINAL .header CSS * * * * * * */
+/* 
+.header {
+	height:180px;
+	margin-bottom:15px;
+	margin-left:auto;
+	margin-right:auto;
+}  */
+
+/* * * * * * * * ATTEMPTED CSS  * * * * * * */
+/*  TRIED TO ADD THE .big_header_bg css from HJ demo site (see CSS below) and change the height (height:642px;) but it wouldn't display  */
+/* 
+.big_header_bg {
+	background:#00628B url(/boutique/templates/hot_boutique/images/top_bg.png) no-repeat center top;
+    height:842px;
+	background:#00628B !important;
+}*/
+
+
+.header {
+	height:180px;
+	margin-bottom:13px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.logo {
+	margin-top:13px;
+	height:180px;
+	width:222px;
+    background-color:#477394;
+    float:right;
+}
+
+.slider{
+    height:180px;
+	float:left;
+    width:748px !important;
+}
+
+.search_wrap {
+	float:left;
+	text-align:right;
+    width:220px !important;
+}
+
+.search_pad {
+        background-color:#FFFFFF;
+}
+	
+#topmenu {
+	height:26px;
+	margin:0 auto;
+}
+
+#topmenu_pad {
+	padding:0px 5px;
+        width:500px;
+        float:left !important;
+}
+
+.path {
+	height:30px;
+	margin:0px auto;
+}
+
+.main_area_pad {
+	margin:0 20px 0 20px;
+}
+
+.main_area_pad_noright {
+	margin:0 0 0 20px;
+}
+
+.main_area_pad_noleft {
+	margin:0 20px 0 0;
+}
+
+.main_area_pad_noleft_noright {
+	margin:0;
+}
+
+.content_wrap {
+	float:left;
+}
+
+.content_wrap_pad {
+	padding:30px 40px 20px 40px;
+}
+
+.content_pad {
+	padding:5px 0px 0 0px;
+}
+
+.column_left, .column_right {
+	float:left;
+	padding:30px 0;
+}
+
+.topPanelModules {
+	width:100%;
+}
+
+.bottom1 {
+	padding:30px 0;
+	margin:30px auto 0px auto;
+}
+
+.modulerow1 {
+	width:99.9%;
+	float:left;
+}
+
+.modulerow2 {
+	width:49.9%;
+	float:left;
+}
+
+.modulerow3 {
+	width:33.3%;
+	float:left;
+}
+
+.modulerow4 {
+	width:24.9%;
+	float:left;
+}
+
+.modulerow_pad {
+	margin:0 20px;
+}
+
+.top_content_module_pad {
+	padding-bottom:30px;
+}
+
+.bottom_content_module_pad {
+	padding-bottom:30px;
+}
+
+
+.footer_wrap {
+	margin-bottom:20px;
+}
+
+.footer {
+	float:left;
+	width:49.9%;
+}
+
+.footer2 {
+	float:left;
+	width:49.9%;
+	border-bottom:1px solid #666;
+}
+
+.footer2_pad {
+	padding-left:15px;
+}
+
+.clr {
+	clear:both;
+}
+
+#font_resize {
+       float:right;
+       width:235px;
+       margin:5px 0;
+	   text-align:center;
+	   line-height:normal;
+} 
+
+#font_resize a:link, #font_resize a:visited, #font_resize a:hover {
+	font-weight:normal;
+	color:#fff;
+	text-decoration:none;
+}
+
+.footer2 a, .footer2 {
+      color:#666 !important;
+      text-decoration:none;  
+}

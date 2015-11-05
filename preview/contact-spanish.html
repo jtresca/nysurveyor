@@ -9,7 +9,11 @@
 staking and variance applications.">
   <meta name="keywords" content="New York Land Surveyor, Westchester County,  Rockland County, Survey, land surveyor, commercial lot survey, Subdivision survey, plot plans, new construction surveys, land dispute, property boundaries">
   
-  
+  <script type="text/javascript">
+    // split your email into two parts and remove the @ symbol
+    var first = "newyorksurveyor";
+    var last = "@aol.com";
+  </script>
  <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css?v=1.0">
@@ -55,26 +59,33 @@ staking and variance applications.">
         </div>
         
         <div id="main-body" class="col-md-7">
-         <h1>Contact New York Surveyor</h1>
-         <p><span class="strongtype">Stephen F Hoppe, LS. LLC</span><br>Licensed New York Land Surveyor</p>
-         <p><span class="strongtype">Phone:</span>1(845) 359-5050</p>
+         <h1>Póngase en contacto con Nueva York Surveyor</h1>
+         <p><span class="strongtype">Stephen F Hoppe, LS. LLC</span><br>Licenciado Nueva York Agrimensor</p>
+         <p><span class="strongtype">Teléfono:</span>1(845) 359-5050</p>
          <p><span class="strongtype">Fax:</span>1(845) 230-6610</p>
-        
+         <p><span class="strongtype">E-mail:</span>
+        <script type="text/javascript">
+    document.write('<a href="mailto:'+first + '@' + last+'">'+first + '@' + last+'<\/a>');
+  </script>
+        </p>
         <div class="formhldr">
-          <span>*</span><span>Required</span><br><br>
-         <form action="#">
-            <label>Full Name<br><input type="text" name="fullname"></label>
+          <span>*</span><span>Requerido</span><br><br>
+         <form method="post" action="submit.php">
+
+            <p class="antispam">Leave this empty:
+              <br /><input name="url" /></p>   
+            <label>Nombre completo*<br><input required type="text" name="name"></label>
             <br>
-            <label>E-mail<br><input type="text" name="fullname"></label>
+            <label>E-mail*<br><input required type="text" name="email"></label>
              <br>
-            <label>Phone<br><input type="text" name="fullname"></label>
+            <label>Teléfono*<br><input required type="text" name="phone"></label>
              <br>
-             <label>How may we contact you?</label><br>
-             <label><input type="checkbox" name="contacthow-a" checked value="Phone">Phone</label>
-             <label><input type="checkbox" name="contacthow-b" checked value="Email">Email</label>
-             <label><input type="checkbox" name="contacthow-c" checked value="Mail">Mail</label><br>
-            <label>Comments<br><textarea rows="4" name="address" cols="50" ></textarea></label><br>
-             <input type="submit" value="Submit">
+             <label>¿Cómo podemos contactar contigo?</label><br>
+             <label><input type="checkbox" name="contacthowa" checked value="OK Teléfono">Teléfono</label>
+             <label><input type="checkbox" name="contacthowb" checked value="OK Email">Email</label>
+             <label><input type="checkbox" name="contacthowc" checked value="OK Correo">Correo</label><br>
+            <label>Comentarios<br><textarea rows="4" name="message" cols="50" ></textarea></label><br>
+             <input type="submit" value="Enviar">
           </form>
         </div>
 

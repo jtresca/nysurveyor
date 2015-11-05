@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="plugin" group="system" version="1.6">
+	<name>PLG_SYSTEM_SLIDER</name>
+	<description>PLG_SYSTEM_SLIDER_DESC</description>
+	<version>1.5.2</version>
+	<creationDate>July 2011</creationDate>
+	<author>NoNumber! (Peter van Westen)</author>
+	<authorEmail>peter@nonumber.nl</authorEmail>
+	<authorUrl>http://www.nonumber.nl</authorUrl>
+	<copyright>Copyright © 2011 NoNumber! All Rights Reserved</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+
+	<!-- Files -->
+	<files>
+		<filename plugin="slider">slider.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+	</files>
+
+	<!-- Parameters -->
+	<config>
+		<fields name="params" addfieldpath="/plugins/system/nonumberelements/elements">
+			<fieldset name="basic">
+				<field name="@loadlanguage" type="loadlanguage" extension="plg_system_slider" />
+				<field name="@license" type="license" extension="SLIDER" />
+				<field name="@version" type="version" extension="SLIDER" xml="/plugins/system/slider/slider.xml" />
+				<field name="@header" type="header"
+					label="SLIDER"
+					description="SLIDER_DESC"
+					xml="/plugins/system/slider/slider.xml"
+					image="/plugins/system/slider/images/logo.png"
+					image_w="60" image_h="80"
+					url="http://www.nonumber.nl/slider"
+					help_url="http://www.nonumber.nl/slider" />
+
+				<field name="slider_slide_speed" type="text" size="5" default="500" label="SLD_SLIDE_SPEED" description="SLD_SLIDE_SPEED_DESC" />
+				<field name="slider_fade_in_speed" type="text" size="5" default="1000" label="SLD_FADE_IN_SPEED" description="SLD_FADE_SPEED_DESC" />
+				<field name="slider_fade_out_speed" type="text" size="5" default="400" label="SLD_FADE_OUT_SPEED" description="SLD_FADE_SPEED_DESC" />
+
+				<field name="@block_scroll_a" type="block" start="1" />
+					<field name="slider_scroll" type="radio" default="1" label="SLD_SCROLL" description="SLD_SCROLL_DESC">
+						<option value="0">JNO</option>
+						<option value="1">JYES</option>
+						<option value="2">SLD_SCROLL_TO_SLIDE</option>
+					</field>
+					<field name="slider_slidelinkscroll" type="radio" default="1" label="SLD_SCROLL_SLIDELINKS" description="SLD_SCROLL_SLIDELINKS_DESC">
+						<option value="0">JNO</option>
+						<option value="1">JYES</option>
+					</field>
+					<field name="slider_urlscroll" type="radio" default="1" label="SLD_SCROLL_BY_URL" description="SLD_SCROLL_BY_URL_DESC">
+						<option value="0">JNO</option>
+						<option value="1">JYES</option>
+					</field>
+				<field name="@block_scroll_b" type="block" end="1" />
+
+				<field name="indent" type="radiolist" size="2" default="noindent" label="SLD_INDENTATION" description="SLD_INDENTATION_DESC">
+					<option value="noindent">JNONE</option>
+					<option value="indenttitle">SLD_INDENT_TITLE</option>
+					<option value="indentcontent">SLD_INDENT_CONTENT</option>
+					<option value="indent">SLD_INDENT_BOTH</option>
+				</field>
+				<field name="outline" type="radio" default="1" label="SLD_OUTLINE" description="SLD_OUTLINE_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="@toggler_outline_a" type="toggler" param="outline" value="1" />
+					<field name="line_color" type="colorpicker" default="B4B4B4" label="SLD_LINE_COLOR" description="SLD_LINE_COLOR_DESC" />
+				<field name="@toggler_outline_b" type="toggler" />
+				<field name="rounded" type="radio" default="1" label="SLD_ROUNDED_CORNERS" description="SLD_ROUNDED_CORNERS_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="@toggler_rounded_a" type="toggler" param="rounded" value="1" />
+					<field name="rounded_radius" type="text" size="5" default="10" label="SLD_ROUNDED_RADIUS" description="SLD_ROUNDED_RADIUS_DESC" />
+				<field name="@toggler_rounded_b" type="toggler" />
+
+				<field name="@hr_tags" type="hr" />
+
+				<field name="tag_open" type="text" size="20" default="slide" label="SLD_OPENING_TAG" description="SLD_OPENING_TAG_DESC" />
+				<field name="tag_close" type="text" size="20" default="slides" label="SLD_CLOSING_TAG" description="SLD_CLOSING_TAG_DESC" />
+				<field name="tag_slidelink" type="text" size="20" default="slidelink" label="SLD_SLIDE_LINK_TAG" description="SLD_SLIDE_LINK_TAG_DESC" />
+				<field name="tag_delimiter" type="radiolist" size="2" default="=" label="SLD_TAG_SYNTAX" description="SLD_TAG_SYNTAX_DESC">
+					<option value="=">SLD_SYNTAX_IS</option>
+					<option value="space">SLD_SYNTAX_SPACE</option>
+				</field>
+				<field name="place_comments" type="radio" default="1" label="SLD_PLACE_HTML_COMMENTS" description="SLD_PLACE_HTML_COMMENTS_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+			</fieldset>
+
+			<fieldset name="SLIDER_EDITOR_BUTTON">
+				<field name="button_text" type="text" default="Insert Slides" label="SLD_BUTTON_TEXT" description="SLD_BUTTON_TEXT_DESC" />
+				<field name="button_icon" type="radio" default="1" label="SLD_SHOW_ICON" description="SLD_SHOW_ICON_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="enable_frontend" type="radio" default="1" label="SLD_ENABLE_IN_FRONTEND" description="SLD_ENABLE_IN_FRONTEND_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+			</fieldset>
+
+			<fieldset name="advanced">
+				<field name="title_tag" type="text" size="20" default="h2" label="SLD_TITLE_TAG" description="SLD_TITLE_TAG_DESC" />
+				<field name="load_stylesheet" type="radio" default="1" label="SLD_LOAD_STYLESHEET" description="SLD_LOAD_STYLESHEET_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="load_mootools" type="radio" default="1" label="SLD_LOAD_MOOTOOLS" description="SLD_LOAD_MOOTOOLS_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="use_cookies" type="radio" default="0" label="SLD_USE_COOKIES" description="SLD_USE_COOKIES_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="@set_cookies_a" type="toggler" param="use_cookies" value="0" />
+					<param name="set_cookies" type="radio" default="0" label="SLD_SAVE_COOKIES" description="SLD_SAVE_COOKIES_DESC">
+						<option value="0">JNO</option>
+						<option value="1">JYES</option>
+					</param>
+				<field name="@set_cookies_b" type="toggler" />
+				<field name="use_versioned_files" type="radio" default="0" label="NN_USE_VERSIONED_FILES" description="NN_USE_VERSIONED_FILES_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</install>

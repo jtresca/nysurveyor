@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.6" method="upgrade">
+	<name>COM_NONUMBERMANAGER</name>
+	<description>COM_NONUMBERMANAGER_DESC</description>
+	<version>2.4.1</version>
+	<creationDate>June 2011</creationDate>
+	<author>NoNumber! (Peter van Westen)</author>
+	<authorEmail>peter@nonumber.nl</authorEmail>
+	<authorUrl>http://www.nonumber.nl</authorUrl>
+	<copyright>Copyright © 2011 NoNumber! All Rights Reserved</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+
+	<administration>
+		<menu img="components/com_nonumbermanager/images/icon-nonumber.png">COM_NONUMBERMANAGER</menu>
+	</administration>
+</extension>

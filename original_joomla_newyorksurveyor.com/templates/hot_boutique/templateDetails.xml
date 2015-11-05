@@ -1,0 +1,119 @@
+<install version="1.5" type="template">
+<name>hot_boutique</name>
+<author>HotJoomlaTemplates.com</author>
+<copyright>Copyright 2010 by Hot Joomla Templates</copyright>
+<authorEmail>info@hotjoomlatemplates.com</authorEmail>
+<authorUrl>http://www.hotjoomlatemplates.com</authorUrl>
+<version>1.0</version>
+<description>Commercial template "Hot Boutique" by Hot Joomla Templates.</description>
+<creationDate>March 2010</creationDate>
+<files>
+	<filename>index.php</filename>
+	<filename>params.ini</filename>
+	<filename>template_thumbnail.png</filename>
+	<filename>templateDetails.xml</filename>
+	<folder>css/</folder>
+	<folder>elements/</folder>
+	<folder>html/</folder>
+	<folder>images/</folder>
+	<folder>js/</folder>
+	<folder>styles/</folder>
+</files>
+<positions>
+<position>breadcrumbs</position>
+<position>left</position>
+<position>right</position>
+<position>advert1</position>
+<position>advert2</position>
+<position>advert3</position>
+<position>advert4</position>
+<position>inset</position>
+<position>toolbar</position>
+<position>user1</position>
+<position>user2</position>
+<position>user3</position>
+<position>user4</position>
+<position>user5</position>
+<position>user6</position>
+<position>user7</position>
+<position>user8</position>
+<position>bottom1</position>
+<position>bottom2</position>
+<position>bottom3</position>
+<position>bottom4</position>
+<position>footer</position>
+<position>debug</position>
+</positions>
+<params addpath="/templates/hot_boutique/elements">
+<param name="@settings" type="title" show_save="true" show_apply="true" label="Template's Layout" description="" />
+<param name="templateWidth" type="text" default="980" label="Template Width" description="Please enter template width in pixels (in example 980)." />
+<param name="columnLeftWidth" type="text" default="200" label="Left Column Width" description="Please enter the column width in pixels (in example 285)." />
+<param name="columnRightWidth" type="text" default="200" label="Right Column Width" description="Please enter the column width in pixels (in example 285)." />
+<param name="@settings" type="title" show_save="true" show_apply="true" label="Template Add-ons" description="" />
+<param name="imageReflectionLoad" type="list" default="1" label="Load Image Reflection script" description="If you don't need this feature, you may select not to load it.">
+<option value="1">Yes</option>
+<option value="0">No</option>
+</param>
+<param name="fontResizeLoad" type="list" default="1" label="Font Resize script" description="If you don't need this feature, you may select not to load it.">
+<option value="1">Yes</option>
+<option value="0">No</option>
+</param>
+<param name="lightboxLoad" type="list" default="1" label="Lightbox script" description="If you don't need this feature, you may select not to load it.">
+<option value="1">Yes</option>
+<option value="0">No</option>
+</param>
+<param name="@settings" type="title" show_save="true" show_apply="true" label="Template Style" description="" />
+<param type="spacer" default="IMPORTANT: If you need to edit parameters below, select Custom style." />
+<param name="templateStyle" type="list" default="1" label="Template Styles" description="Please select a predefined template style, or select Custom if you need to edit parameters below.">
+	<option value="0">Custom</option>
+	<option value="1">Style 1</option>
+	<option value="2">Style 2</option>
+	<option value="3">Style 3</option>
+	<option value="4">Style 4</option>
+	<option value="5">Style 5</option>
+</param>
+<param name="@settings" type="title" show_save="true" show_apply="true" label="Body" description="" />
+<param name="bodyText" type="HotColor" default="#c9c9c9" label="Default Text Color" description="Please enter color in hexadecimal format (in example #000000)." />
+<param name="linkColor" type="HotColor" default="#000000" label="Default Link Color" description="Please enter color in hexadecimal format (in example #000000)." />
+
+<param name="@settings" type="title" show_save="true" show_apply="true" label="Template's Primary/Secondary Colors" description="" />
+<param name="primaryColor" type="HotColor" default="#B21154" label="Primary Background Color" description="Please enter color in hexadecimal format (in example #000000)." />
+<param name="primaryTextColor" type="HotColor" default="#FBEDF2" label="Primary Text Color" description="Please enter color in hexadecimal format (in example #000000)." />
+<param name="secondaryColor" type="HotColor" default="#B21154" label="Secondary Background Color" description="Please enter color in hexadecimal format (in example #000000)." />
+<param name="secondaryTextColor" type="HotColor" default="#B21154" label="Secondary Text Color" description="Please enter color in hexadecimal format (in example #000000)." />
+
+<param name="@settings" type="title" show_save="true" show_apply="true" label="Top Menu" description="" />
+<param name="topMenuBg" type="HotColor" default="#000000" label="BG Color" description="Please enter color in hexadecimal format (in example #000000)." />
+<param name="menuEffect" type="list" default="drop_in" label="Menu Animation Effect" description="Please select menu animation effect.">
+<option value="fadeIn(700)">Fade</option>
+<option value="slideDown('slow')">Scroll Down</option>
+<option value="show(400)">Drop-In</option>
+<option value="show(0)">None</option>
+</param>
+<param name="topMenuButton" type="HotColor" default="#222222" label="Button Color" description="Please enter color in hexadecimal format (in example #222222)." />
+<param name="topMenuHoverButton" type="HotColor" default="#ffffff" label="Button Hover Color" description="Please enter color in hexadecimal format (in example #ffffff)." />
+<param name="topMenuText" type="HotColor" default="#ffffff" label="Text Color" description="Please enter color in hexadecimal format (in example #ffffff)." />
+<param name="topMenuHoverText" type="HotColor" default="#222222" label="Text Hover Color" description="Please enter color in hexadecimal format (in example #222222)." />
+
+<param name="@settings" type="title" show_save="true" show_apply="true" label="Left/Right Column Menu" description="" />
+<param name="mainMenuButton" type="HotColor" default="#1c2024" label="Button Color" description="Please enter color in hexadecimal format (in example #1c2024)." />
+<param name="mainMenuText" type="HotColor" default="#ffffff" label="Text Color" description="Please enter color in hexadecimal format (in example #ffffff)." />
+<param name="mainMenuHoverText" type="HotColor" default="#cccccc" label="Text Hover Color" description="Please enter color in hexadecimal format (in example #cccccc)." />
+<param name="mainMenuButtonActive" type="HotColor" default="#e4e37c" label="Active Button Color" description="Please enter color in hexadecimal format (in example #e4e37c)." />
+<param name="mainMenuTextActive" type="HotColor" default="#000000" label="Active Text Color" description="Please enter color in hexadecimal format (in example #000000)." />
+
+<param name="@settings" type="title" show_save="true" show_apply="true" label="Content Headings" description="" />
+<param name="componentHeadingText" type="HotColor" default="#ffffff" label="Component Heading Color (H1)" description="Please enter color in hexadecimal format (in example #ffffff)." />
+<param name="headingText" type="HotColor" default="#ffffff" label="Content Heading Color (H2, H3, H4)" description="Please enter color in hexadecimal format (in example #ffffff)." />
+
+<param name="@settings" type="title" show_save="true" show_apply="true" label="Breadcrumbs" description="" />
+<param name="breadcrumbsText" type="HotColor" default="#ffffff" label="Text Color" description="Please enter color in hexadecimal format (in example #000000)." />
+
+<param name="@settings" type="title" show_save="true" show_apply="true" label="Bottom Module Row" description="" />
+<param name="bottomBg" type="HotColor" default="#000000" label="BG Color" description="Please enter color in hexadecimal format (in example #000000)." />
+<param name="bottomText" type="HotColor" default="#ffffff" label="Text Color" description="Please enter color in hexadecimal format (in example #ffffff)." />
+
+
+</params>
+</install>
+
